@@ -17,7 +17,7 @@
 #           computed from K values, not from Si_AI/Si_I    [Stević et al. 2020]
 # [FIX-6]  COPRAS: positive-domain shift + utility degree
 #           Qi/max(Qi) as published output                 [Zavadskas 1994; Podvezko 2011]
-# [FIX-7]  MAIRCA: internal linear normalization on raw m  [Pamucar & Ćirović 2015]
+# [FIX-7]  MAIRCA: internal linear normalization on raw m [Pamucar et al. 2018]
 # [FIX-8]  SPOTIS: bounds expanded by 5% of range
 #           (sign-safe, avoids zero-distance collapse)      [Dezert et al. 2020]
 # [FIX-9]  TOPSIS: vector normalisation on raw matrix      [Hwang & Yoon 1981]

@@ -710,7 +710,7 @@ run_methods <- function(m, w, norm_func = normalize_min_max) {
   edas        <- rownames(m)[which.max(edas_scores)]
   
   # ── MAIRCA [FIX-7] ───────────────────────────────────────────────────────
-  # Internal linear normalisation on raw m (Pamucar & Ćirović 2015).
+  # Internal linear normalisation on raw m [Pamucar et al. 2018].
   # Theoretical preference matrix T_p uses equal preference 1/n per alternative.
   nm_mairca <- matrix(0, nrow = n, ncol = k)
   for (j in seq_len(k)) {
@@ -1113,7 +1113,7 @@ cat("  [FIX-3]  ARAS: sum-based norm               [Zavadskas & Turskis 2010]\n"
 cat("  [FIX-4]  EDAS: raw m, original NSP/NSN      [Keshavarz Ghorabaee 2016]\n")
 cat("  [FIX-5]  MARCOS: f(K) from K values         [Stevic et al. 2020]\n")
 cat("  [FIX-6]  COPRAS: correct Qi formula         [Zavadskas 1994; Podvezko 2011]\n")
-cat("  [FIX-7]  MAIRCA: internal linear norm       [Pamucar & Cirovic 2015]\n")
+cat("  [FIX-7]  MAIRCA: internal linear norm       [Pamucar et al. 2018]\n")
 cat("  [FIX-8]  SPOTIS: range-expanded bounds      [Dezert et al. 2020]\n")
 cat("  [FIX-9]  TOPSIS: vector normalisation       [Hwang & Yoon 1981]\n\n")
 cat("  [FIX-R1] EDAS: positive shift before AV    [Keshavarz Ghorabaee 2016]\n")
